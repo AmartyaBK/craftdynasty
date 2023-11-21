@@ -1,0 +1,266 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #fefefe;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+}
+
+.nav-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: grey;
+    text-decoration: none;
+}
+
+.search-input {
+    padding: 8px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 20px;
+    margin: 0 20px;
+    width: 65%;
+    height: 40px;
+    margin-left: -5px;
+    box-shadow: 2px 2px 5px lightgray;
+    background-color: #dfe2e6;
+}
+@media screen and (max-width: 768px) {
+    .nav-link {
+        width: 5%;
+        margin-left: 10px;
+    }
+    .logo{
+        margin-left: 10px;
+    }
+}
+
+/* CSS untuk tombol ikon dan dropdown menu */
+.icon-button {
+    color: black;
+    font-size: 25px;
+    margin: 15px;
+    text-decoration: none;
+}
+
+.account-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    z-index: 1;
+    top: 50px;
+}
+#dropdown-bell{
+    width: 200px;
+    left: -20px;
+}
+#dropdown-comment{
+    width: 250px;
+    left: -120px;
+}
+#dropdown-account{
+    top: 60px;
+    width: 150px;
+    left: -75px;
+}
+
+.dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+.dropdown-content h4 {
+    margin: 10px 15px;
+    text-align: left;
+}
+.dropdown-content input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    margin: 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.dropdown-content a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: black;
+}
+.dropdown-content a:hover {
+    color: rgb(150, 150, 150);
+}
+.dropdown:focus-within .icon-button {
+    color: rgb(2, 2, 194);
+}
+
+
+/* Account */
+.centered-section {
+    display: flex;
+    justify-content: center;
+    height: auto
+}
+
+.account {
+    text-align: center;
+}
+
+.account img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.account h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.account p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.account div {
+    margin-top: 20px;
+}
+.ikut {
+    font-size: 15px;
+    margin: 0px 15px;
+    color: rgba(0, 0, 0, 0.56);
+}
+.bagikan {
+    margin: 0px 15px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    padding: 8px 16px; 
+    border-radius: 5px; 
+    text-decoration: none;
+    display: inline-block; 
+}
+
+.bagikan:hover {
+    background-color: darkblue;
+}
+
+.dibuat{
+    padding-top: 30px ;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.dibuat a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.655);
+}
+#simpan{
+    text-decoration: underline;
+    color: black;
+}
+.konten span{
+    margin: 5px 20px;
+}
+.konten span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.filter{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    font-size: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.card{
+    padding: 50px 40px;
+}
+.card-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-content{
+    background-color: rgb(244, 244, 244);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 18%;
+    margin: 10px 14px;
+}
+@media screen and (max-width: 768px) {
+    .card-content {
+        width: 100%;
+    }
+}
+.card-content:hover {
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.card-content img{
+    width: 100%;
+    height: 250px;
+}
+.card-content > div {
+    margin-left: 10px;
+}
+.card-content > div h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.card-content > div p{
+    font-size: 12px;
+}   
+.card-content > div img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.u-icon{
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.u-icon p{
+    margin-left: 5px;
+    white-space: nowrap;
+}
+.u-icon i {
+    margin-left: 10px; 
+}
+#love{
+    margin-left: 85px;
+}
+
+
+
